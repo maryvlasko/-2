@@ -1,0 +1,75 @@
+.product-list {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Центрируем весь контент */
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.search-container {
+  display: flex;
+  margin-left: -5px; 
+}
+
+.search-container input {
+  padding: 5px;
+}
+
+.products {
+  margin-top: 20px;
+}
+
+.product-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.quantity-controls {
+  display: flex;
+  align-items: center;
+}
+
+.quantity-controls input {
+  text-align: center;
+  width: 50px; /* Сделаем область ввода уже */
+  margin: 0 10px; /* Добавим отступы между кнопками и полем ввода */
+}
+
+.quantity-controls button {
+  padding: 5px 10px; /* Размер кнопок */
+}
+
+
+.product-name {
+  flex: 1;
+}
+
+.price input {
+  width: 100px;
+}
+
+.total-price {
+  margin-top: 20px;
+  font-size: 18px;
+}
+
+.add-product {
+  margin-top: 20px;
+}
+
+.add-product input {
+  margin-right: 10px;
+  padding: 5px;
+}
+
+.add-product button {
+  margin-right: 10px;
+  padding: 5px;
+}

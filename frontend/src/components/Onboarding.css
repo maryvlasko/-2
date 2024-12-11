@@ -1,0 +1,86 @@
+.onboarding {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    font-family: Arial, sans-serif;
+  }
+  
+  .avocado-image {
+    width: 300px;
+    height: auto;
+    margin-bottom: 20px;
+  }
+  
+.navigation {
+    display: flex;
+    align-items: center;
+    position: relative;
+  }
+  
+  .arrow {
+    background: none;
+    border: none;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  
+  .left-arrow {
+    left: -50px; /* Располагаем левую стрелку левее картинки */
+  }
+  
+  .right-arrow {
+    right: -50px; /* Располагаем правую стрелку правее картинки */
+  }
+  
+  .arrow img {
+    width: 40px; /* Увеличиваем размер стрелочек */
+    height: auto;
+  }
+  
+  .description {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 16px;
+    color: #333;
+    max-width: 400px; /* Ограничиваем ширину текста */
+    width: 100%; /* Обеспечиваем, что он занимает всю возможную ширину */
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  
+  .indicator {
+    margin-top: 20px;
+    display: flex;
+    gap: 10px;
+  }
+  
+  .dot {
+    width: 12px;
+    height: 12px;
+    opacity: 0.4;
+  }
+  
+  .dot.active {
+    opacity: 1;
+  }
+  
+  .start-button {
+    margin-top: 40px;
+    padding: 10px 40px;
+    font-size: 18px;
+    background-color: #c892ff;
+
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .start-button:hover {
+    background-color: #c08fff;
+  }

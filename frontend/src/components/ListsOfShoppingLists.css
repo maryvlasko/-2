@@ -1,0 +1,193 @@
+.lists-of-shopping-lists {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.header {
+    background-color: #e4e3e3;
+    /* светло-серый цвет */
+    padding: 0px 20px;
+    /* уменьшенная высота */
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 0;
+    /* убрано отступ */
+    margin-bottom: 0px;
+    /* Отступ снизу */
+    font-size: 12px;
+}
+
+.folder-icon {
+    margin-right: 10px;
+    width: 24px;
+    /* увеличена иконка */
+    height: 24px;
+}
+
+.search-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    width: 100%;
+}
+
+/* Поиск */
+.search-container input {
+    width: 90%;
+    padding: 12px;
+    /* немного увеличена высота */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.search-container img {
+    width: 23px;
+
+}
+
+.shopping-lists {
+    width: 100%;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Стили для строк списков */
+.shopping-list-item {
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 10px 0;
+    padding: 15px;
+    /* увеличено расстояние */
+    background-color: #ffffff;
+    /* белый фон */
+    border: 1px solid #bbb;
+    /* темная граница */
+    border-radius: 10px;
+    /* закругленные углы */
+}
+
+.shopping-list-item h2 {
+    flex-grow: 1;
+}
+
+/* Увеличим расстояние между кнопкой "Удалить" и ценой */
+.price-container {
+    margin-left: 20px;
+    /* увеличено расстояние */
+    margin-right: 10px;
+}
+
+/* Кнопка "Добавить список" */
+.add-list-button {
+    margin-top: 20px;
+    padding: 12px 24px;
+    /* немного больше по размеру */
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+}
+
+.add-list-button:hover {
+    background-color: #f0f0f0;
+}
+
+/* Чекбокс */
+.shopping-list-item input[type="checkbox"] {
+    transform: scale(1.5);
+    /* увеличиваем чекбокс */
+    margin-right: 10px;
+}
+
+/* Модальное окно */
+.modal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    border: 1px solid black;
+    /* черные границы */
+}
+
+.modal input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+
+/* Для строк с названием и паролем */
+.modal input[type="text"] {
+    width: 80%; /* Уменьшаем ширину поля */
+    margin-top: 10px; /* Увеличиваем отступ сверху */
+  }
+  
+  .modal input[type="password"] {
+    width: 80%; /* Уменьшаем ширину поля для пароля */
+    margin-top: 10px; /* Увеличиваем отступ сверху */
+  }
+  
+
+.modal button {
+    padding: 10px 20px;
+    margin-right: 10px;
+    background-color: white;
+    /* белый фон */
+    border: 1px solid #ccc;
+    /* граница */
+    border-radius: 5px;
+    /* скругленные углы */
+    cursor: pointer;
+}
+
+.modal button:hover {
+    background-color: #f0f0f0;
+}
+
+
+/* Центровка левого и правого краев */
+.search-container,
+.shopping-lists .shopping-list-item {
+    display: flex;
+    justify-content: space-between;
+    /* Выравнивание по краям */
+    align-items: center;
+    width: 90%;
+    /* Установить одинаковую ширину для контейнеров */
+
+    /* Максимальная ширина для центровки */
+    margin: 10px 0;
+    font-size: 12px;
+}
+
+.back-to-onboarding {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    padding: 10px 20px;
+    background-color: #ffffff;
+    border: solid 1px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .back-to-onboarding:hover {
+    background-color: #e0e0e0;
+  }
+  
